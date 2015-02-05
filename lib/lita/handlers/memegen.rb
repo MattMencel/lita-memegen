@@ -20,7 +20,7 @@ module Lita
       route %r{(NOT SURE IF .*) (OR .*)}i,                         :meme_not_sure_if,      help: { "NOT SURE IF.. OR.." => "generates NOT SURE IF .. OR meme" }
       route %r{(YO DAWG .*) (SO .*)}i,                             :meme_yo_dawg,          help: { "YO DAWG.." => "generates YO DAWG meme" }   
       route %r{(ALL YOUR .*) (ARE BELONG TO US)}i,                 :meme_are_belong,       help: { "ALL YOUR.. ARE BELONG TO US" => "generates ALL YOUR.. ARE BELONG TO US meme" }       
-      route %r{(.*) (FUCK YOU)}i,                                  :meme_fuck_you,         help: { "..FUCK YOU" => "generates ..FUCK YOU meme" }     
+#      route %r{(.*) (FUCK YOU)}i,                                  :meme_fuck_you,         help: { "..FUCK YOU" => "generates ..FUCK YOU meme" }     
       route %r{(.*) (You'?re gonna have a bad time)}i,             :meme_bad_time,         help: { ".. You're going have a bad time" => "generates You're gonna have a bad time meme" }     
       route %r{(one does not simply) (.*)}i,                       :meme_simply,           help: { "one does not simply.." => "generates one does not simply.. meme" }   
       route %r{(grumpy cat) (.*),(.*)}i,                           :meme_grumpy_cat,       help: { "grumpy cat .. , .." => "generates grumpy cat .. , .. meme" }       
@@ -73,9 +73,9 @@ module Lita
         generate_meme(response, 349058, 2079825)
       end
 
-      def meme_fuck_you(response)
-        generate_meme(response, 1189472, 5044147)
-      end
+      # def meme_fuck_you(response)
+      #   generate_meme(response, 1189472, 5044147)
+      # end
 
       def meme_bad_time(response)
         generate_meme(response, 825296, 3786537)
